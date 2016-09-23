@@ -1,6 +1,6 @@
 /*
  ThingPlug StarterKit for LoRa version 0.1
- 
+
  Copyright © 2016 IoT Tech. Lab of SK Telecom All rights reserved.
 
   Licensed under the Apache License, Version 2.0 (the "License");
@@ -38,15 +38,15 @@ module.exports = {
   RepPerChange : 'RepPerChange',                  // starter kit에서 생성하고 사용할 제어 명령 RepPerChange
   RepImmediate : 'RepImmediate',                  // starter kit에서 생성하고 사용할 제어 명령 RepImmediate
   extDevMgmt : 'extDevMgmt',            // starter kit에서 생성하고 사용할 제어 명령 extDevMgmt
-  
+
   UPDATE_CONTENT_INTERVAL : 1000,         //contentInstance 생성주기
-  
+
   BASE_TEMP : 30,
   BASE_HUMID : 60,
   BASE_LUX : 80,
- 
-  delimiter : ',',                  // contents 구분자                             
- 
+
+  delimiter : ',',                  // contents 구분자
+
   contents : function(){                              // Device에서 ThingPlug로 전달하는 실제 데이터 (contentInstance의 Attribute <con>)
   var value_TEMP = (Math.floor(Math.random() * 5) + this.BASE_TEMP).toString(); // 가상의 온도값
   var value_HUMID = (Math.floor(Math.random() * 5) + this.BASE_HUMID).toString(); // 가상의 습도값

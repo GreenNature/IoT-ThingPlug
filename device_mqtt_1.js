@@ -32,7 +32,7 @@ if(typeof config === 'undefined') {
   return console.log(colors.red('먼저 config.js를 열어 optionData를 설정하세요. README.md에 Starterkit 실행 방법이 설명되어 있습니다.'));
 }
 if(typeof tcp_device === 'undefined') {
-  return console.log(colors.red('tcp_device가 없는거 같아요'));
+  return console.log(colors.red('tcp_device.js가 없는거 같아요'));
 }
 
 console.log(colors.green('0. 제어 명령 수신 MQTT 연결'));
@@ -376,7 +376,7 @@ function MQTTClient(){
 	  var dKey = "<dKey>"+config.dKey+"</dKey>";
 	  var cty = "<cty>application/vnd.onem2m-prsp+xml</cty>";
 	  var reqBody = "<pc><cin><cnf>text</cnf><con>"+"22,"+tcp_device.sensor_data()+",123"+"</con></cin></pc></m2m:req>";
-    
+
 	  var createContentInstance = reqHeader+op+to+fr+ty+ri+cty+dKey+reqBody;
 	  client.publish("/oneM2M/req/"+ config.nodeID +"/"+config.AppEUI, createContentInstance, {qos : 1}, function(){
 
