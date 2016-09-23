@@ -25,6 +25,6 @@ module.exports = {
     });
 
     server.listen(PORT,HOST);
-    console.log(log_color.green("TCP server open, IP : "+ Host + ", PORT : "+PORT));
+    console.log(log_color.green("TCP server open, IP : "+ HOST + ", PORT : "+PORT));
   }
 };
