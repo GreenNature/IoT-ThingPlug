@@ -1,5 +1,5 @@
 var sensor_value = 0;
-
+var log_color = require('colors');
 module.exports = {
   sensor_data : function(){
     return sensor_value;
@@ -25,6 +25,6 @@ module.exports = {
     });
 
     server.listen(PORT,HOST);
-    console.log("TCP 채팅 서버가 시작되었습니다.");
+    console.log(log_color.green("TCP server open, IP : "+ Host + ", PORT : "+PORT));
   }
 };

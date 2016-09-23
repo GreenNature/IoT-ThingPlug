@@ -29,11 +29,11 @@ module.exports = {
   userID : 'wowsystem01',                             // MQTT버전에서 Broker 접속을 위한 ID, 포털 ID 사용
   mqttClientId : '1',     // MQTT버전에서 Broker 접속을 위한 client ID
 
-  nodeID : '1.2.481.1.999.206.12346',           // Device 구분을 위한 LTID, 디바이스 고유 ID 사용
+  nodeID : '1.2.481.1.999.212.6923',           // Device 구분을 위한 LTID, 디바이스 고유 ID 사용
   passCode : '00000000',                            // ThingPlug에 Device등록 시 사용할 Device의 비밀번호
   uKey : 'c3UydTRrL01QOU54ODkvcm5Mc1psZlZEYVIrUXN4K0dZZFZQVjB1VmI1TkdWcmJiVmxTZSt2Nlp1dkpXdVA0SA==',                  // Thingplug로그인 후, `마이페이지`에 있는 사용자 인증키
 
-  containerName:'LoRa',                           // starter kit에서 생성하고 사용할 container 이름 (임의지정)
+  containerName:'wowsystem',                           // starter kit에서 생성하고 사용할 container 이름 (임의지정)
   DevReset : 'DevReset',                          // starter kit에서 생성하고 사용할 제어 명령 DevReset
   RepPerChange : 'RepPerChange',                  // starter kit에서 생성하고 사용할 제어 명령 RepPerChange
   RepImmediate : 'RepImmediate',                  // starter kit에서 생성하고 사용할 제어 명령 RepImmediate
