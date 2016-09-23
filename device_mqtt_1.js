@@ -376,7 +376,7 @@ function MQTTClient(){
 	  var dKey = "<dKey>"+config.dKey+"</dKey>";
 	  var cty = "<cty>application/vnd.onem2m-prsp+xml</cty>";
     var sensor_val = config.contents().split(',');
-	  var reqBody = "<pc><cin><cnf>text</cnf><con>"+sensor_val[0]+tcp_device.sensor_data()+sensor_val[2]+"</con></cin></pc></m2m:req>";
+	  var reqBody = "<pc><cin><cnf>text</cnf><con>"+sensor_val[0]+","+tcp_device.sensor_data()+","+sensor_val[2]+"</con></cin></pc></m2m:req>";
 	  var createContentInstance = reqHeader+op+to+fr+ty+ri+cty+dKey+reqBody;
 	  client.publish("/oneM2M/req/"+ config.nodeID +"/"+config.AppEUI, createContentInstance, {qos : 1}, function(){
 
